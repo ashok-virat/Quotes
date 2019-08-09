@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <h2 style="text-align: center">Add Your {{categories}} Quote</h2>
+            <form #createForm="ngForm" (submit)="createBlog()">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Quote</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your Quote..." name="quote" [(ngModel)]="quote" #title='ngModel' required>
+                      <div class="alert alert-danger" [hidden]="title.valid || title.pristine" >Write some quote</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Author</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Author"
+                      name="Author" [(ngModel)]="Author" #author="ngModel" required>
+                      <div class="alert alert-danger" [hidden]="author.valid || author.pristine">Write author name</div>
+                    </div>
+
+                    <button class="btn btn-primary" [disabled]='createForm.invalid'>Submit</button>
+                  </form>
+    </div>
+</div>

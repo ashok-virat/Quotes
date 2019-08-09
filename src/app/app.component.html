@@ -1,0 +1,17 @@
+
+<div clas='container'>
+    <h1 style="text-align:center">Quotes</h1>
+</div>
+<div class="container-fluid" style="margin:50px">
+    <div class='row'>
+            <div class="list-group" style="text-align: center" >
+                    <a   [routerLink]="['/home','jokes']" class="list-group-item list-group-item-action">
+                      Joke
+                    </a>
+                    <a [routerLink]="['/love','love']" class="list-group-item list-group-item-action ">Love</a>
+                    <a [routerLink]="['/motivation','Motivation']" class="list-group-item list-group-item-action">Motivation</a>
+                  </div>
+    </div>
+</div><br><br>
+<hr>
+<router-outlet></router-outlet>

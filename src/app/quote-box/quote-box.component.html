@@ -1,0 +1,17 @@
+<div class='container'>
+    <div class='row'>
+<h1 class="header" style="text-align:center">Jokes</h1>
+   <button class="btn btn-success" [routerLink]="['/add',category]">Add your Quote</button>
+  
+  <div class="card">
+       <div class="jumbotron" *ngFor='let quotes of Quotes'>
+      
+                <div class="card-body">
+                  <h5 class="card-title">{{quotes.quote}}</h5>
+                  <p class="card-text">Author:{{quotes.author}}</p>
+                  <button class="btn btn-warning" [routerLink]="['/edit',quotes.id]">View This Quote</button>
+              
+            </div>
+              </div>
+  </div>
+  </div>
