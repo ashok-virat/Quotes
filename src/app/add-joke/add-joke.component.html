@@ -11,7 +11,7 @@
                       <label for="exampleInputPassword1">Author</label>
                       <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Author"
                       name="Author" [(ngModel)]="Author" #author="ngModel" required>
-                      <div class="alert alert-danger" [hidden]="author.valid || author.pristine">author name</div>
+                      <div class="alert alert-danger" [hidden]="author.valid || author.pristine">Write author name</div>
                     </div>
 
                     <button class="btn btn-primary" [disabled]='createForm.invalid'>Submit</button>

@@ -16,6 +16,7 @@ public quote:string;
   constructor(public service:QuoteService,public route:ActivatedRoute,public router:Router) { 
 
     this.categories=this.route.snapshot.paramMap.get('category')
+    console.log(this.categories)
   }
 
   ngOnInit() {
